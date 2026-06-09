@@ -1,0 +1,166 @@
+body{
+    margin:0;
+    padding:0;
+    font-family:'Young serif';
+}
+:root{
+    
+--White: hsl(0, 0%, 100%);
+
+--Stone100: hsl(30, 54%, 90%);
+--Stone150: hsl(30, 18%, 87%);
+--Stone600: hsl(30, 10%, 34%);
+--Stone900: hsl(24, 5%, 18%);
+--Brown800: hsl(14, 45%, 36%);
+--Rose800: hsl(332, 51%, 32%);
+--Rose50: hsl(330, 100%, 98%);
+
+}
+.container{
+    margin:0;
+    width:100%; 
+    height:auto;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    background-color:var(--Stone100);
+}
+.card{
+    margin:7% 0px;
+    width:40%;
+    padding: 40px;
+    height:auto;
+    background-color:var(--White);
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    border-radius:10px;
+}
+.card img{
+    width:100%;
+    height:30%;
+    border-radius:10px;
+    margin: 0;
+}
+.Title{
+    font-weight:700;
+    font-size: 2.2em;
+    margin:17px 0;
+    color:var(--Stone900);
+}
+.des{
+    margin:0;
+    color:var(--Stone600);
+}
+.preBox{
+    box-sizing: border-box;
+    width: 100%;
+    background-color: var(--Rose50);
+    border-radius: 10px;
+    margin:25px 0;
+    padding:0 25px;
+}
+.preTitle{
+    margin-bottom:15px;
+    color:var(--Rose800);
+}
+.List{
+    margin:0;
+    padding-left: 17px;
+    padding-bottom: 17px;
+    color:var(--Stone600);
+}
+.preBox li::marker{
+    color: var(--Rose800);
+}
+li{
+    line-height: 30px;
+}
+span{
+    padding-left: 15px;
+    font-weight: bold;
+}
+.h2Title{
+    color: var(--Brown800);
+    margin:0;
+    margin-bottom: 10px;
+}
+.List li::marker{
+    color: var(--Brown800);
+}
+ol li::marker{
+    color: var(--Brown800);
+    font-weight: 600;
+}
+.custom-line {
+  height: 0.5px;
+  background-color: var(--Brown800); 
+  width: 100%;    
+  margin-bottom: 20px;       
+}
+.nutritionTable{
+    margin-top: 10px;
+}
+.nutritionTable td{
+    border-bottom: 0.5px solid var(--Brown800);
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-right: 150px;
+    padding-left: 20px;
+    color: var(--Stone600);
+}
+.bold{
+    color: var(--Brown800);
+    font-weight: 700;
+}
+@media screen and (max-width: 475px) {
+  
+.container{
+    margin:0;
+    width:100%; 
+    padding: 0;
+    height:auto;
+}
+.card{
+    overflow: hidden;
+    margin:0;
+    width:100%;
+    padding:0;
+    height:auto;
+    border-radius:0;
+}
+
+.card img{
+    border-radius:0;
+    margin: 0;
+}
+.Title{
+    font-size: 2em;
+    margin:17px 20px;
+}
+.des{
+     max-width: 335px;
+    margin:0 20px;
+
+}
+.preBox{
+    margin:25px auto;
+     max-width: 335px;
+}
+.h2Title{
+    margin: 10px 20px;
+}
+.List{
+   margin:25px 20px;
+     max-width: 335px;
+} 
+span{
+    padding-left: 15px;
+    font-weight: bold;
+}
+.h2Title{
+   
+    margin:10px 20px;
+}
+}
